@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cats-api-deployment
+  labels:
+    app: cats-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cats-api
+  template:
+    metadata:
+      labels:
+        app: cats-api
+    spec:
+      containers:
+        - name: cats-api
+          image: alexandruvaratic/cats-api:1.0.0
+          ports:
+            - containerPort: 8001
+          env:
+            - name: DB_HOST
+              value: "172.29.240.1"
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: "cat"
+            - name: DB_USER
+              value: "admin"
+            - name: DB_PASSWORD
+              value: "admin"
