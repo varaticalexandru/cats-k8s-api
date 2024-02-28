@@ -2,7 +2,7 @@ package org.alexv.catsapi.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
-import org.alexv.catsapi.controller.service.CatService;
+import org.alexv.catsapi.service.CatService;
 import org.alexv.catsapi.dto.CatDto;
 import org.alexv.catsapi.entity.Cat;
 import org.springframework.web.bind.annotation.*;

@@ -7,7 +7,7 @@ spec:
     - http:
         paths:
           - pathType: Prefix
-            path: /api
+            path: /cats-api
             backend:
               service:
                 name: cats-service

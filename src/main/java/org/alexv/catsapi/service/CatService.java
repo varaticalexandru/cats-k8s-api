@@ -1,4 +1,4 @@
-package org.alexv.catsapi.controller.service;
+package org.alexv.catsapi.service;
 
 import lombok.RequiredArgsConstructor;
 import org.alexv.catsapi.dto.CatDto;

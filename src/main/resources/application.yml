@@ -1,7 +1,7 @@
 server:
   port: 8001
   servlet:
-    context-path: "/api"
+    context-path: "/cats-api"
 
 
 spring:
